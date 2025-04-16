@@ -18,23 +18,23 @@ public class CalculadoraTest {
     }
 
     public static void pruebaResta() {
-        
+        assert CALC.resta(0.0, 0.0) == 0.0;
     }
     
     public static void pruebaMultiplicacion() {
-        
+        assert CALC.multiplicacion(0.0, 0.0) == 0.0;
     }
 
     public static void pruebaDivision() {
-        
+        assert CALC.division(0.0, 1.0) == 0.0;
     }
     
     public static void pruebaRaiz() {
-        
+        assert CALC.raiz(0.0) == 0.0;
     }
 
     public static void pruebaExponente() {
-        
+        assert CALC.exponente(0.0) == 1.0;
     }
 
 }
