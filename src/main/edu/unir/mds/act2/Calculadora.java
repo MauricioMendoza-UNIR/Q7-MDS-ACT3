@@ -23,7 +23,7 @@ public class Calculadora {
     }
     
     public double exponente(double x) {
-        return 0;
+        return 1;
     }
 
 }
