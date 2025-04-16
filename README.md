@@ -1,5 +1,13 @@
-# Q7-MDS-ACT2
+## UNIR - La Universidad en Internet
+
+Ing. en Sistemas Computacionales
+
+Metodologías de Desarrollo de Software
+
 Actividad grupal: Calidad del software
+
+Profesor: Jorge Alberto Izaguirre Ysaguirre
+
 
 ### Equipo D1
  - Angeles Pascual, Candy
