@@ -22,13 +22,13 @@ public class Calculadora {
 
             double num1 = 0, num2 = 0, resultado = 0;
 
-            if (opcion >= 1 && opcion <= 4 || opcion == 6) {
+            if (opcion >= 1 && opcion <= 4) {
                 System.out.print("Ingresa el primer número: ");
                 num1 = scanner.nextDouble();
 
                 System.out.print("Ingresa el segundo número: ");
                 num2 = scanner.nextDouble();
-            } else if (opcion == 5) {
+            } else if (opcion == 5 || opcion == 6) {
                 System.out.print("Ingresa el número: ");
                 num1 = scanner.nextDouble();
             } else if (opcion == 7) {
@@ -42,20 +42,20 @@ public class Calculadora {
 
             switch (opcion) {
                 case 1:
-                    resultado = num1 + num2;
+                    resultado = suma(num1, num2);
                     System.out.println("Resultado: " + resultado);
                     break;
                 case 2:
-                    resultado = num1 - num2;
+                    resultado = resta(num1, num2);
                     System.out.println("Resultado: " + resultado);
                     break;
                 case 3:
-                    resultado = num1 * num2;
+                    resultado = multiplicacion(num1, num2);
                     System.out.println("Resultado: " + resultado);
                     break;
                 case 4:
                     if (num2 != 0) {
-                        resultado = num1 / num2;
+                        resultado = division(num1, num2);
                         System.out.println("Resultado: " + resultado);
                     } else {
                         System.out.println("Error: No se puede dividir entre cero.");
@@ -63,20 +63,44 @@ public class Calculadora {
                     break;
                 case 5:
                     if (num1 >= 0) {
-                        resultado = Math.sqrt(num1);
+                        resultado = raiz(num1);
                         System.out.println("Resultado: " + resultado);
                     } else {
                         System.out.println("Error: No se puede calcular la raíz de un número negativo.");
                     }
                     break;
                 case 6:
-                    resultado = Math.pow(num1, num2);
+                    resultado = exponente(num1);
                     System.out.println("Resultado: " + resultado);
                     break;
             }
         }
 
         scanner.close();
+    }
+    
+    public static double suma(double x, double y) {
+        return 0;
+    }
+    
+    public static double resta(double x, double y) {
+        return 0;
+    }
+
+    public static double multiplicacion(double x, double y) {
+        return 0;
+    }
+    
+    public static double division(double x, double y) {
+        return 0;
+    }
+    
+    public static double raiz(double x) {
+        return 0;
+    }
+    
+    public static double exponente(double x) {
+        return 1;
     }
 }
 
