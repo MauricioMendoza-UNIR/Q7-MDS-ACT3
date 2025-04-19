@@ -3,6 +3,8 @@ package edu.unir.mds.act2;
 import java.util.Scanner;
 
 public class Calculadora {
+    public static final double e = 2.71828; 
+    
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         boolean continuar = true;
@@ -80,27 +82,39 @@ public class Calculadora {
     }
     
     public static double suma(double x, double y) {
-        return 0;
+        return x + y;
     }
     
     public static double resta(double x, double y) {
-        return 0;
+        return x - y;
     }
 
     public static double multiplicacion(double x, double y) {
-        return 0;
+        return x * y;
     }
     
     public static double division(double x, double y) {
-        return 0;
+        return x / y;
     }
     
     public static double raiz(double x) {
-        return 0;
+        if (x < 0) return Double.NaN;
+        if (x == 0) return 0;
+
+        double resultado = x / 2;
+        double precision = 0.0001;
+
+        while (Math.abs(resultado * resultado - x) > precision)
+            resultado = (resultado + x / resultado) / 2;
+
+        return resultado;
     }
     
     public static double exponente(double x) {
-        return 1;
+        if (x == 0)
+            return 1;
+        else
+            return e * exponente(x - 1);
     }
 }
 
