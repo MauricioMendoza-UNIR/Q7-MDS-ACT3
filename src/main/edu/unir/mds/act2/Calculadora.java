@@ -3,7 +3,8 @@ package edu.unir.mds.act2;
 import java.util.Scanner;
 
 public class Calculadora {
-    public static final double e = 2.71828; 
+    public static final double e = 2.71828;
+    public static final double precision = 0.0001;
     
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -102,7 +103,6 @@ public class Calculadora {
         if (x == 0) return 0;
 
         double resultado = x / 2;
-        double precision = 0.0001;
 
         while (Math.abs(resultado * resultado - x) > precision)
             resultado = (resultado + x / resultado) / 2;
