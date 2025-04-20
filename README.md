@@ -15,3 +15,5 @@ Profesor: Jorge Alberto Izaguirre Ysaguirre
  - Mendoza Barragan, David Benjamin
  - Mendoza Martinez, Mauricio
  - Puac Pérez, Luis Antonio
+
+![clases](https://github.com/user-attachments/assets/e6a37f05-a6f0-404b-b5c1-7f0d9af457e7)
