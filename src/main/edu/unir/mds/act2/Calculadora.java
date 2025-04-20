@@ -28,7 +28,6 @@ public class Calculadora {
             if (opcion >= 1 && opcion <= 4) {
                 System.out.print("Ingresa el primer número: ");
                 num1 = scanner.nextDouble();
-
                 System.out.print("Ingresa el segundo número: ");
                 num2 = scanner.nextDouble();
             } else if (opcion == 5 || opcion == 6) {
@@ -111,10 +110,7 @@ public class Calculadora {
     }
     
     public static double exponente(double x) {
-        if (x == 0)
-            return 1;
-        else
-            return e * exponente(x - 1);
+        if (x == 0) return 1;
+        else return e * exponente(x - 1);
     }
 }
-
